@@ -16,3 +16,22 @@ body{
 .PanColumna {
     border: 1px solid black;
 }
+
+/*Estilos header*/
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+}
+
+.PanMenu{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 10px;
+}
