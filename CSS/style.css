@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-header: rgba(237, 184, 189, 1);
+    --color-fondo: rgba(251, 241, 233, 1);
+}
+
 body{
     background-color: rgba(251, 241, 233, 1);
 }
 
 .PanFila {
-    background-color: rgba(237, 184, 189, 1);
+    background-color: var(--color-header);
 }
 
 .PanColumna {
@@ -17,6 +22,10 @@ body{
 }
 
 /*Estilos header*/
+
+ul, li{
+    list-style: none;
+}
 
 h1{
     font-family: "Pacifico", cursive;
@@ -31,7 +40,7 @@ h1{
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 10px;
+    font-size: 7px;
     text-decoration: none;
     color: black;
     
@@ -39,13 +48,36 @@ h1{
 
 .PanLogoPao {
     margin-top: 0.5rem;
-    margin-left: 2rem;
     width: 60px;
+}
+
+/*Media querys*/
+
+@media (min-width: 375px) {
+    .PanMenu {
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+    .PanLogoPao {
+        width: 80px;
+    }
+
+}
+
+@media (min-width: 425px) {
+
+    h1 {
+        font-size: 11px;
+    }
+
 }
 
 @media (min-width: 768px) {
     .PanMenu {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     h1 {
@@ -53,28 +85,20 @@ h1{
     }
 
     .PanLogoPao {
-        margin-left: 4.5rem;
         width: 130px;
     }
 }
 
 @media (min-width: 1024px) {
-    .PanLogoPao {
-        margin-left: 6rem;
-        width: 130px;
-    }
+    
 }
 
 @media (min-width: 1440px) {
-    .PanLogoPao {
-        margin-left: 8rem;
-        width: 130px;
+    .PanMenu {
+        font-size: 13px;
     }
 }
 
 @media (min-width: 2560px) {
-    .PanLogoPao {
-        margin-left: 14rem;
-        width: 130px;
-    }
+    
 }
