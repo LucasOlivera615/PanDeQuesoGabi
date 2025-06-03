@@ -51,9 +51,18 @@ h1{
     width: 60px;
 }
 
+/*Estilos main*/
+
+.PanCarruEstilo {
+    border: 5px solid black;
+}
+
 /*Media querys*/
 
 @media (min-width: 375px) {
+
+    /*Estilos header*/
+
     .PanMenu {
         font-size: 8px;
     }
@@ -69,6 +78,8 @@ h1{
 
 @media (min-width: 425px) {
 
+    /*Estilos header*/
+
     h1 {
         font-size: 11px;
     }
@@ -76,6 +87,9 @@ h1{
 }
 
 @media (min-width: 768px) {
+
+    /*Estilos header*/
+
     .PanMenu {
         font-size: 10px;
     }
@@ -94,6 +108,9 @@ h1{
 }
 
 @media (min-width: 1440px) {
+
+    /*Estilos header*/
+
     .PanMenu {
         font-size: 13px;
     }
