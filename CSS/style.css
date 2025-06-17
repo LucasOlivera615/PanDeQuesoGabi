@@ -17,8 +17,8 @@ body{
     background-color: var(--color-header);
 }
 
-.PanColumna {
-    border: 1px solid black; /*Luego borrar esta clase*/
+a {
+    text-decoration: none;
 }
 
 /*Estilos header*/
@@ -101,10 +101,24 @@ h1{
 }
 
 .PanProducto {
-    border: 5px solid black;
+    border: 5px double black;
     border-radius: 50%;
     overflow: hidden;
     width: 80%;
+}
+
+.PanRedSocial {
+    width: 8rem;
+    height: 5.25rem;
+    border: 5px solid var(--color-header);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+}
+
+.PanInstagram {
+    text-align: center;
+    overflow: hidden;
 }
 
 /*Media querys*/
@@ -163,6 +177,10 @@ h1{
     .PanLogoPao {
         width: 130px;
     }
+
+    .PanProducto {
+        width: 50%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -179,7 +197,11 @@ h1{
 
     .PanSubtitulo3{
     font-size: 25px;
-}
+    }
+
+    .PanProducto {
+        width: 40%;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -194,6 +216,10 @@ h1{
 
     .PanCarruImg {
         height: 350px;
+    }
+
+    .PanProducto {
+        width: 30%;
     }
 }
 
